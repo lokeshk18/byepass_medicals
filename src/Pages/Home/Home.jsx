@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import img from "../../assests/Doctors.gif"
+import img from "../../assets/Doctors.gif"
 const Home=()=>{
 return (
 <div className='home-page-container'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/byepass logo.jpg'
 import './FormHeader.scss'
 const FormHeader = () => {
   return (

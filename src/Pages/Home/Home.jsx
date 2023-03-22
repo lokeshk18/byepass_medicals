@@ -7,14 +7,13 @@ return (
      <div className="row">
     <div className="col-6">
         <p>Keep Yourself Healthy And Fit <br/> with Right Medicine </p>  
+        <button>Get Started</button>
     </div>  
         <div className="col-6">
-        <img src={img} alt="Doctor gif" />
+        <img src={img} alt="Doctor gif"  />
+        </div>    
+        </div>   
         </div>
-        
-        </div>  
-       
-</div>
 )
 }
 export default Home 

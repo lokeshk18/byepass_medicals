@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 function Navbar(){
     return(
        <div className="Navbar-container">
@@ -15,14 +16,14 @@ function Navbar(){
       </ul>
       <ul className="navbar-nav">
       <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <Link className="nav-link" to="/login">Login</Link>
         </li>
         
         <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+          <Link className="nav-link" to="/register">Register</Link>
         </li>
       </ul>
     </div>

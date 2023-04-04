@@ -10,5 +10,10 @@
 
 .but1{
     text-decoration: none;
-    // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.19);
+    border-radius:40px;
+    background-color:#3c7378;
+    box-shadow: 10px 8px 16px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.19);
+}
+.but1:hover{
+    // padding-right: 0px;
 }

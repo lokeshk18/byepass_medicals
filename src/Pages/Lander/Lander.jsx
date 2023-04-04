@@ -13,7 +13,7 @@ return (
     <div className='container' style={{margin:"10px",padding:"0px 85px 0px 80px"}}>
         <p>You can explore our range of products, learn more about their benefits and features, and make informed decisions about which products are right for you. We are committed to providing excellent customer service and support, and we stand behind our products with a satisfaction guarantee . Thank you !!
  </p>  </div>
-        <button className='btn btn-success' style={{borderRadius:"40px"}}><Link to="/home" style={{textDecoration:"none",color:"white",padding:"10px"}}>Get Started </Link></button>
+        <button className='btn but1'><Link to="/home" style={{textDecoration:"none",color:"white",padding:"10px"}}>Get Started </Link></button>
     </div>
         <div className="col-6"> 
         <img src={img} alt="Doctor gif"/>

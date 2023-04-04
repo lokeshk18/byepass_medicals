@@ -1,0 +1,19 @@
+[{
+    "id": 1,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/S04683/evion-400mg-strip-of-20-capsule-2-1678787718.jpg?dim=700x0&dpr=1&q=100",
+    "name": "Evion 400mg Strip Of 20 Capsule",
+    "price": "71.08",
+    "categories": "capsule"
+  }, {
+    "id": 2,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I12335/calcimax-d-1000mg-strip-of-30-tablets-2-1669710215.jpg?dim=700x0&dpr=1&q=100",
+    "name": "Calcimax D 1000mg Strip Of 30 Tablets",
+    "price": "345.5",
+    "categories": "Tablet"
+  }, {
+    "id": 3,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/G19614/liveasy-essentials-adhesive-bandages-box-of-100-1-1641791579.jpg?dim=700x0&dpr=1&q=100",
+    "name": "Liveasy Essentials Adhesive Bandages - Box Of 100",
+    "price": "169.15",
+    "categories": "Bandages"
+  }]

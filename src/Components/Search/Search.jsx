@@ -39,15 +39,15 @@ const Search = () => {
     <div className='shadow'>
         <div className=" search-container">
             <div className="search-bar">
-                <div className="my-3">
-                    <input type="text" placeholder="search the product" className="form-control" onChange={e=>setName(e.target.value)} />
-                </div>
                 <div className='search-icon'>
                     <MaterialIcon icon={"search"} size={24} color="black" />
                 </div>
+                <div className="my-3">
+                    <input type="text" placeholder="Search for products" className="form-control" onChange={e=>setName(e.target.value)} />
+                </div>
             </div>
              <div className="col-4"> 
-             <MaterialIcon icon={"shopping_cart"} size={24} color="black" />
+                <Link to="/cart"><MaterialIcon icon={"shopping_cart"} size={24} color="black" /></Link>
              </div>
         </div>
 

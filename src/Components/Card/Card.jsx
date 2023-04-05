@@ -27,11 +27,11 @@ const Card = (props) => {
         <div className="summary-box shadow-sm" style={{marginTop:"100px"}}>
             <h3 className="summary-title">Order Summary</h3> <hr/>
             <h5>Items Ordered: {card.length}</h5>
-            <h5>Product Price: ${total}</h5>
-            <h5><small>Shipping Cost: ${shipping}</small></h5>
-            <h5><small>Tax + vat: ${tax}</small></h5>
-            <h5>Total Price: ${grandTotal}</h5>
-            <Button variant="success mt-2" style={{marginLeft:"80px"}}>Buy Now</Button>
+            <h5>Product Price: Rs.{total}</h5>
+            <h5><small>Shipping Cost: Rs.{shipping}</small></h5>
+            <h5><small>Tax + vat: Rs.{tax}</small></h5>
+            <h5>Total Price: Rs{grandTotal}</h5>
+            <Button variant="success mt-2" style={{marginLeft:"80px"}}>Order</Button>
         </div>
     );
 };

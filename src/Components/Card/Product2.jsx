@@ -4,7 +4,7 @@ import './product.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
  
-const Product = (props) => {
+const Product2 = (props) => {
     const {name, image, price, categories} = props.product;   
     return (
         <div className="container">
@@ -15,11 +15,11 @@ const Product = (props) => {
             <h5>Price: Rs.{price}</h5>
  
             <Button onClick={() => props.addProduct(props.product)}
-                className="btn btn-success"> <Link to="/cart" style={{color:"whitesmoke"}}>Add To Cart</Link>
+                className="btn btn-success"> <Link to="/cart" style={{color:"whitesmoke"}}>Buy Now</Link>
             </Button> 
             </div>
         </div>
     );
 };
  
-export default Product;
+export default Product2;

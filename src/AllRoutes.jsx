@@ -6,6 +6,7 @@ import Categories from './Pages/Category/Categories'
 import Home from './Pages/Home/Home'
 import Lander from './Pages/Lander/Lander'
 import Cart from './Pages/Cart/Cart'
+import Allproduct from './Pages/Product/Allproduct'
 
 const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoutes = () => {
         <Route path='/home' element={<Home/>} />
         <Route path='/categories' element={<Categories/>} />
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/products' element={<Allproduct/>}/>
     </Routes>
   )
 }

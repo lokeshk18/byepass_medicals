@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import JsonData from './data.json';
-import Product2 from './Product2';
+import Product from './Product';
 import Card from './Card';
 
  
-const Shop = () => {
+const Shop3 = () => {
     const [product, setProduct] = useState([]);
  
     const [card, setCard] = useState([]);
@@ -19,19 +19,15 @@ const Shop = () => {
     }
     return (
         <div className="container-fluid d-flex">
-            <div className="col-lg-9 product-area border-right">
+            <div className="col-lg product-area border-right">
  
                 {
-                    product.map(pd => <Product2 product={pd} addProduct={addProduct}></Product2>)
+                    product.map(pd => <Product product={pd} addProduct={addProduct}></Product>)
                 }
  
-            </div>
- 
-            <div className="col-lg-3 card-area">
-                <Card card={card}></Card>
             </div>
         </div>
     );
 };
  
-export default Shop;
+export default Shop3;

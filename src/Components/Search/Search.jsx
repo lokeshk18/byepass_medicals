@@ -55,7 +55,7 @@ const Search = () => {
                 <div className="topics-container">
                     {topics.map((t,i)=>(
                         <div className="topic" key={i}>
-                         <Link to={t.link} style={{textDecoration:'none',color:'black'}}>{t.title}</Link>   
+                         <Link to="/products" style={{textDecoration:'none',color:'black'}}>{t.title}</Link>   
                         </div>
                     ))}
                 </div>

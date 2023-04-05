@@ -19,7 +19,7 @@ const Shop2 = () => {
     }
     return (
         <div className="container-fluid d-flex">
-            <div className="col product-area border-right">
+            <div className="col-9 product-area border-right">
  
                 {
                     product.map(pd => <Product product={pd} addProduct={addProduct}></Product>)

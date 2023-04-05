@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
+import {Link} from "react-router-dom"
 import './Register.scss';
 const Register = () => {
   const [name,setName]=useState("")
@@ -74,7 +75,7 @@ const Register = () => {
                 <Input key={idx} {...i}  />
               ))
             }
-            <Button value="Register" />
+            <button className='btn' style={{backgroundColor:"#00AA95"}}><Link to="/home" style={{color:"whitesmoke"}}>Register</Link></button>
             </form>
           </div>
            

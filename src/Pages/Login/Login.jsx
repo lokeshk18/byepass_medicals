@@ -2,7 +2,9 @@ import React,{useState} from 'react'
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
+
 import './Login.scss';
+import { Link } from 'react-router-dom';
 const Login = () => {
   const [name,setName]=useState("")
   const [password,setPassword]=useState("")
@@ -39,7 +41,7 @@ const Login = () => {
                 <Input key={idx} {...i}  />
               ))
             }
-            <Button value="Login" />
+            <button className='btn' style={{backgroundColor:"#00AA95"}}><Link to="/home" style={{color:"whitesmoke"}}>Login</Link></button>
             </form>
           </div>
            

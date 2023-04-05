@@ -1,5 +1,5 @@
 import React from 'react';
-import './card.css';
+import './Card.css';
 import { Button } from 'react-bootstrap';
  
 const Card = (props) => {

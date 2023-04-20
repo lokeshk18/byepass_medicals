@@ -1,14 +1,23 @@
 import React from "react"
 import "./Scrolls.scss"
 function Scrolls() {
-    return (<section>
+  const arr= [1,2,3,4,1,1]
+    return (
+    
+    <section className="scroll-container  shadow">
   
-  <div class="cards-wrapper">
-    <div class="card"><a href="#"><img src="https://cms-contents.pharmeasy.in/carousel_item/7a381fcb6e9-App_dettol-min.png?dim=1440x0"></img></a></div>
-    <div class="card"><a><img src="https://cms-contents.pharmeasy.in/carousel_item/3c344faad99-App_Featured-J.jpg?dim=1280x0"></img></a></div>
-    <div class="card"><a><img src="https://cms-contents.pharmeasy.in/carousel_item/2f3e832e341-Everherb-min.png?dim=1280x0"></img></a></div>
-    <div class="card"><a><img src=""></img></a></div>
-    <div class="card"><a><img src=""></img></a></div>    
+  <div class="cards-wrapper ">
+    {arr.map((a,idx)=>(
+    <div class="product-card" key={idx}>
+        <div className="img-container shadow">
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/7a381fcb6e9-App_dettol-min.png?dim=1440x0" />
+        </div>
+        <div className="brand">
+          Dettol
+        </div>
+      </div>
+    ))}
+    
   </div>
 </section>
      );

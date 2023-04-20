@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Carousel from "../../Components/Carousel/Carousel";
 // import Card from "../../Components/Card/Card";
 import Footer from '../../Components/Footer/Footer';
-import './Home.css'
+import './Home.scss'
 import offer from '../../assets/offer.webp'
 import Shop2 from "../../Components/Card/Shop2";
 import Scrolls from "../../Components/Scrolls/Scrolls";
@@ -13,7 +13,7 @@ import Scrolls from "../../Components/Scrolls/Scrolls";
 const Home = ()=>{
   // const arr=[1,2, 3,4];
     return (
-       <div>
+       <div className="home-container">
         <Navbar/>
         <Search />
         <div className="row">
@@ -32,16 +32,23 @@ const Home = ()=>{
             ))
             
 } */}
-    <h3>Deals of the Day</h3>
-              <Scrolls/>
-              <h3>Shop By health concerns</h3>
-              <Scrolls/>
+   </div>
+            <div className="deals-container  my-3 ">
+                    <h5 className="p-3">Deals of the Day</h5>
+                    <Scrolls/>
+            </div>
+
+            <div className="shops-container my-3 ">
+                  <h5 className="p-3">Shop By health concerns</h5>
+                  <Scrolls/>
+            </div>
+
                 <Shop2/>
                 
            </div>
            <hr style={{marginTop:"80px"}}/>
               <Footer/>
-            </div>
+         
             </div>
              
     )

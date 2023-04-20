@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import Navbar from '../../Components/Navbar/Navbar';
 import './Register.scss';
 const Register = () => {
   const [name,setName]=useState("")
@@ -65,6 +66,7 @@ const Register = () => {
   ]
   return (
     <div className='login-container'>
+      <Navbar/>
         <div className="box-outer">
           <div className="box shadow">
           <FormHeader />

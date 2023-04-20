@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
-
+import Navbar from '../../Components/Navbar/Navbar';
 import './Login.scss';
 import { Link } from 'react-router-dom';
 const Login = () => {
@@ -31,6 +31,7 @@ const Login = () => {
   ]
   return (
     <div className='login-container'>
+      <Navbar/>
         <div className="box-outer">
           <div className="box shadow">
           <FormHeader />

@@ -7,6 +7,7 @@ import Footer from '../../Components/Footer/Footer';
 import './Home.css'
 import offer from '../../assets/offer.webp'
 import Shop2 from "../../Components/Card/Shop2";
+import Scrolls from "../../Components/Scrolls/Scrolls";
 // import Product from "../../Components/Card/Product";
 
 const Home = ()=>{
@@ -29,8 +30,14 @@ const Home = ()=>{
                 
               </div>
             ))
+            
 } */}
+    <h3>Deals of the Day</h3>
+              <Scrolls/>
+              <h3>Shop By health concerns</h3>
+              <Scrolls/>
                 <Shop2/>
+                
            </div>
            <hr style={{marginTop:"80px"}}/>
               <Footer/>

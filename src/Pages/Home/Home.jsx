@@ -34,12 +34,12 @@ const Home = ()=>{
 } */}
    </div>
             <div className="deals-container  my-3 ">
-                    <h5 className="p-3">Deals of the Day</h5>
+                    <h5 className="p-3" style={{color:"black"}}>Deals of the Day</h5>
                     <Scrolls/>
             </div>
 
             <div className="shops-container my-3 ">
-                  <h5 className="p-3">Shop By health concerns</h5>
+                  <h5 className="p-3" style={{color:"black"}}>Shop By health concerns</h5>
                   <Scrolls/>
             </div>
 

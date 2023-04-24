@@ -1,23 +1,23 @@
-
 .home-page-container{
-    .home-page-right{
+    .home-page-right
+    {
         display:flex;
         flex-direction: column;
         justify-content:center ;
         align-items: center;
     }
 }
-
 .but1{
     text-decoration: none;
     border-radius:40px;
     background-color:#3c7378;
     box-shadow: 10px 8px 16px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.19);
 }
-.but1:hover{
+.but1:hover
+{
     // padding-right: 0px;
 }
-
-    button:hover {
-        background-color: rgb(73, 57, 214);
-        }
+button:hover 
+{
+background-color: rgb(73, 57, 214);
+}

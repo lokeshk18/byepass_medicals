@@ -1,7 +1,7 @@
 import React from "react"
 import "./Scrolls.scss"
 function Scrolls() {
-  const arr= [1,2,3,4,1,1]
+  const arr= [1,2,3,4,1]
     return (
     
     <section className="scroll-container  shadow">
@@ -14,6 +14,11 @@ function Scrolls() {
         </div>
         <div className="brand">
           Dettol
+           </div>
+        <div>
+        <p className="p-0 m-0">Hairbless Strip Of 10 Tablets</p>
+          <p className="p-0 m-0" style={{color:'lightgrey'}}>MRP <del>₹299.00</del></p>
+          <p className="m-0">₹164.45 <span style={{color:"red"}} >(45%)</span></p>
         </div>
       </div>
     ))}

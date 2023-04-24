@@ -6,8 +6,8 @@ import car3 from '../../assets/carousel3.png'
 
 const Carousel = () => {
   return (
-    <>
-    <div className='container carousel'>
+  
+    <div className='carousel'>
 
     <div id="carouselExampleFade" className="carousel slide carousel-fade">
   <div className="carousel-inner">
@@ -32,7 +32,7 @@ const Carousel = () => {
 </div>
 </div>
 
-</>
+
   )
 }
 

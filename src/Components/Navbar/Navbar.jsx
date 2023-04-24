@@ -14,9 +14,12 @@ function Navbar(){
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         
       </ul>
-      <ul className="navbar-nav">
+      <ul className="navbar-nav">     
       <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/home" style={{color:"#c1e6d5"}}>Home</Link>
+        </li>
+         <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/about" style={{color:"#c1e6d5"}}>About</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/login" style={{color:"#c1e6d5"}}>Login</Link>

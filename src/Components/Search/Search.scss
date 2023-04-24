@@ -8,10 +8,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1rem;
-    gap:2px;
+    border:1px solid lightgray;
+    height:35px;
+    
+    
     input{
         width: 600px;
+        border-color: transparent;
     }
     .search-icon{
         display: flex;
@@ -19,6 +22,12 @@
         align-items: center;
     }
     
+}
+
+.cart-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .topics-container{
@@ -36,3 +45,24 @@
        }
     }
 }
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }

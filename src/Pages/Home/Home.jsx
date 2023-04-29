@@ -50,6 +50,10 @@ const Home = ()=>{
                
                 
            </div>
+           <div className="deals-container  my-3 ">
+                    <h5 className="p-3" style={{color:"black"}}>Why Choose US</h5>
+                   
+            </div>
 
          <div className="choose-container">
 
@@ -58,8 +62,8 @@ const Home = ()=>{
               <img src="https://assets.pharmeasy.in/apothecary/images/family.svg?dim=96x0" alt="" />  
             </div>
             <div className="content"> 
-              <div className="count p-0 m-0">32 Million+ </div>
-              <div className="words m-0">Registered users as of Mar 31, 2022</div>
+              <div className="count p-0 m-0">1000+ </div>
+              <div className="words m-0">Registered users </div>
             </div>
          </div>
 
@@ -68,8 +72,8 @@ const Home = ()=>{
             <img src="https://assets.pharmeasy.in/apothecary/images/deliveryBoy.svg?dim=96x0" alt="" />
           </div>
           <div className="content">
-            <p className="count p-0 m-0" >36 Million+</p>
-            <p className="words m-0"> Orders on Pharmeasy till date </p>
+            <p className="count p-0 m-0" >Orders</p>
+            <p className="words m-0">Will be delivered be on time </p>
           </div>
          </div>
 
@@ -78,8 +82,8 @@ const Home = ()=>{
             <img src="https://assets.pharmeasy.in/apothecary/images/pincodeServed.svg?dim=96x0" alt="" />
           </div>
          <div className="content">
-            <p className="count p-0 m-0" >36 Million+</p>
-            <p className="words m-0"> Unique items sold last 3 months</p>
+            <p className="count p-0 m-0" >2000+ </p>
+            <p className="words m-0">Brands are sold</p>
          </div>
         </div>
 
@@ -88,15 +92,12 @@ const Home = ()=>{
             <img src="https://assets.pharmeasy.in/apothecary/images/locationMarker.svg?dim=96x0" alt="" />  
           </div>
           <div className="content">
-            <p className="count p-0 m-0">19500+</p> 
-            <p className="words m-0"> Pin codes serviced last 3 months</p>
+            <p className="count p-0 m-0">40+</p> 
+            <p className="words m-0"> Years Of Expirence</p>
             </div>
           </div>
 
-        </div>
-        
-
-         
+        </div>  
            <hr style={{marginTop:"80px"}}/>
               <Footer/>
         

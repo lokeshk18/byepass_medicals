@@ -1,6 +1,7 @@
 .search-container{
+    margin-top: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
 }
 
@@ -24,11 +25,6 @@
     
 }
 
-.cart-icon{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
 .topics-container{
     display: flex;

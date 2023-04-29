@@ -18,6 +18,7 @@ const Home = ()=>{
        <div className="home-container">
         <Navbar/>
         <Search />
+    
         <div className="row">
             <div className="col-8">
                 <Carousel />
@@ -33,7 +34,7 @@ const Home = ()=>{
               </div>
             ))
             
-} */}
+            } */}
    </div>
             <div className="deals-container  my-3 ">
                     <h5 className="p-3" style={{color:"black"}}>Deals of the Day</h5>

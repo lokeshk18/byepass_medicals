@@ -1,11 +1,19 @@
 div{
     line-height: 40px;
   }
-  a{
-    text-decoration: none;
-    color: gray;
-    /* font-family:monospace; */
-  }
-  h6{
-    /* font-family: monospace; */
-  }
+
+.foot a{
+  text-decoration: none;
+  color: rgb(221, 217, 217);
+}
+
+.head{
+  color: rgb(221, 217, 217);
+}
+.icons{
+  margin-top: 15px;
+  margin-left: 2px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}

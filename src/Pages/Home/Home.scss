@@ -9,4 +9,45 @@
     .shops-container{
         width: 100%;
     }
+    .choose-container {
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        gap:34px;
+        
+        .choose{
+            display: flex;
+            justify-content: "center";
+            align-items: "center";
+            gap:6px;
+            height:200px;
+            .img-container{
+                height:200px;
+                width:40px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                
+                }
+            }
+            .content{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: column;
+              
+                .count{
+                    font-size: 23px;
+                    font-weight: 400;
+                }
+                .words{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        
+    }
 }

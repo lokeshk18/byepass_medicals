@@ -59,10 +59,8 @@ const Search = () => {
                           <Link to="/products" className='title'>{t.title}</Link>   
                         </div>
                     ))}
-                </div>
-               
-        
-        </div>
+                </div>            
+              </div>
     </div>
   )
 }

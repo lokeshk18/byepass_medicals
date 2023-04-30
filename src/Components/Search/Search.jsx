@@ -45,22 +45,24 @@ const Search = () => {
                 <div className='search-icon'>
                     <MaterialIcon icon={"search"} size={22} color="black" />
                 </div>
+                
             </div>
-             <div className="cart-icon"> 
-             <p className="m-2">Cart</p>
-                <Link to="/cart"><MaterialIcon icon={"shopping_cart"} size={20} color="black" /></Link>
+            <div className="cart-icon" style={{marginLeft:"20px"}}> 
+             <p className="m-2"> <Link style={{textDecoration:"none",color:"#4c4d4c"}} to="/cart"><i class="fa-solid fa-cart-plus" style={{color: "#2d6322"}}></i> Cart</Link></p>
+               
              </div>
         </div>
 
-        <div className="row my-3">
+        <div className="row" style={{margin:"20px"}}>
                 <div className="topics-container">
                     {topics.map((t,i)=>(
                         <div className="topic" key={i}>
-                          <Link to="/products" className='title'>{t.title}</Link>   
+                          <Link to="/products" className='title' style={{color:"#2b2b2b"}}>{t.title}</Link>   
                         </div>
                     ))}
                 </div>            
               </div>
+
     </div>
   )
 }

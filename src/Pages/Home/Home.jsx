@@ -28,8 +28,7 @@ const Home = ()=>{
 
            <div className="row">
             {/* {arr.map((a,i)=>(
-              <div key={i} className="col-2">
-                
+              <div key={i} className="col-2">    
               </div>
             ))
             

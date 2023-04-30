@@ -1,5 +1,4 @@
 import React from 'react'
-import Shop3 from '../../Components/Card/Shop3'
 import Navbar from '../../Components/Navbar/Navbar';
 import {Link } from "react-router-dom"
 
@@ -51,7 +50,7 @@ function Allproduct() {
         
         </div>
         <hr />
-        <Shop3/>
+       
     </div>
   )
 }

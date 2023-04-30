@@ -9,7 +9,7 @@
 
 .container{
     width: 80vw;
-    height:80vh;
+    height:90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,7 +29,7 @@
     height: 70%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 40px;
 }
 .product{
@@ -61,7 +61,7 @@
 .namePrice{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .namePrice h3{
     font-size: 2em;
@@ -73,12 +73,14 @@
     color: gray;
 }
 .namePrice p span{
-    
     color: green;
 }
 .product p{
-    font-size: 18px;
-    line-height: 25px;
+    font-weight: 400;
+    margin-top: 45px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.4px;  
 }
 .stars svg{
     font-size: 1.3em;
@@ -90,7 +92,7 @@
     right: 20px;
 }
 .bay button{
-    padding: 10px 20px;
+    padding: 1px 12px;
     border-radius: 7px;
     border: none;
     background-color: var(--textColor);

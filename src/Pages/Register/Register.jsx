@@ -4,7 +4,8 @@ import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
 import {Link} from "react-router-dom";
 import Navbar from '../../Components/Navbar/Navbar';
-import './Register.scss';
+// import './Register.scss';
+import "../Login/Login.scss";
 const Register = () => {
   const [name,setName]=useState("")
   const [Fname,setFname]=useState("")
@@ -74,7 +75,7 @@ const Register = () => {
             <form > 
             {
               inputs.map((i,idx)=>(
-                <Input key={idx} {...i}  />
+                <p><Input key={idx} {...i}  /></p>
               ))
             }
             <button className='btn' style={{backgroundColor:"#00AA95"}}><Link to="/home" style={{color:"whitesmoke"}}>Register</Link></button>

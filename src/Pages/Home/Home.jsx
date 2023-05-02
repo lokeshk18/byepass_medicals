@@ -50,9 +50,7 @@ const Home = ()=>{
                 
            </div>
            <div style={{padding:"30px"}} className="deals-container  my-3 ">
-                    <h5 className="p-3" style={{color:"black"}}>Why Choose US</h5>
-                   
-        
+              <h5 className="p-3" style={{color:"black"}}>Why Choose US</h5>
 
          <div className="choose-container">
 
@@ -96,7 +94,8 @@ const Home = ()=>{
             </div>
           </div>
 
-        </div>    </div>
+        </div>
+        </div>
 
                 {/* Footer */}
 

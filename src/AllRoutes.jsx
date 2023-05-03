@@ -2,13 +2,12 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import Login from './Pages/Login/Login'
 import Register from './Pages/Register/Register'
-import Categories from './Pages/Category/Categories'
+import Categories from './Components/Category/Category'
 import Home from './Pages/Home/Home'
 import Lander from './Pages/Lander/Lander'
 import Cart from './Pages/Cart/Cart'
-import Allproduct from './Pages/Product/Allproduct'
-import Products from './Components/Products/Products'
-import Order from './Components/Order/Order'
+import Products from './Pages/Products/Products'
+import ViewProduct from './Pages/ViewProduct/ViewProduct'
 const AllRoutes = () => {
   return (
     <Routes>
@@ -19,9 +18,8 @@ const AllRoutes = () => {
         <Route path='/home' element={<Home/>} />
         <Route path='/categories' element={<Categories/>} />
         <Route path='/cart' element={<Cart/>}/>
-        {/* <Route path='/products' element={<Allproduct/>}/> */}
         <Route path='/products' element={<Products/>}/>
-        <Route path='/order' element={<Order/>}/>
+        <Route path='/view' element={<ViewProduct/>}/>
         
        
     </Routes>

@@ -1,7 +1,8 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../../Components/Navbar/Navbar"
 import './Products.css';
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   return (
@@ -40,7 +41,7 @@ const Products = () => {
                     <span style={{color:"gray"}}>381 ratings</span>
                 </div> */}
                 <div className="bay">
-                    <button> View </button>
+                    <Link to="/view"><button> View </button></Link>
                 </div>
             </div>
                 

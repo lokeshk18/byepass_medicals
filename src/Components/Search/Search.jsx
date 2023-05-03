@@ -48,7 +48,7 @@ const Search = () => {
                 
             </div>
             <div className="cart-icon" style={{marginLeft:"20px"}}> 
-             <p className="m-2"> <Link style={{textDecoration:"none",color:"#4c4d4c"}} to="/cart"><i class="fa-solid fa-cart-plus" style={{color: "#2d6322"}}></i> Cart</Link></p>
+             <p className="m-2"> <Link style={{textDecoration:"none",color:"#4c4d4c"}} to="/cart"><i class="fa-solid fa-cart-plus" style={{marginRight:"3px"}}></i> Cart</Link></p>
                
              </div>
         </div>

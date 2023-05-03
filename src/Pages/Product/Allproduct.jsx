@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar';
 import {Link } from "react-router-dom"
+import "./Allproduct.scss";
 
 function Allproduct() {
   const topics = [
@@ -39,10 +40,10 @@ function Allproduct() {
         <Navbar/>
         <p></p>
         <div className="row">
-                <div className="topics-container">
+                <div className="">
                     {topics.map((t,i)=>(
                         <div className="topic" key={i}>
-                         <Link to="/products" style={{textDecoration:'none',color:'black'}}>{t.title}</Link>   
+                         <Link to="/products" style={{textDecoration:'none',color:'black'}} className='link'>{t.title}</Link>   
                         </div>
                     ))}
                 </div>

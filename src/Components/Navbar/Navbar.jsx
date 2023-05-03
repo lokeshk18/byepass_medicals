@@ -18,17 +18,17 @@ function Navbar(){
       </ul>
       <ul className="navbar-nav">     
       <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/home" style={{color:"#c1e6d5"}}>Home</Link>
+          <Link className="nav-link active" aria-current="page" to="/home" style={{color:"#c1e6d5",marginRight:"10px"}}><i class="fa-solid fa-house" style={{marginRight:"5px"}}></i> Home</Link>
         </li>
          <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/about" style={{color:"#c1e6d5"}}>About</Link>
+          <Link className="nav-link active" aria-current="page" to="/about" style={{color:"#c1e6d5"}}><i class="fa-sharp fa-solid fa-address-card" style={{marginRight:"5px"}}></i> About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/login" style={{color:"#c1e6d5"}}>Login</Link>
+          <Link className="nav-link" to="/login" style={{color:"#c1e6d5"}}><i class="fa-solid fa-arrow-right-to-bracket" style={{marginRight:"5px"}}></i> Login</Link>
         </li>
         
         <li className="nav-item">
-          <Link className="nav-link" to="/register" style={{color:"#c1e6d5"}}>Register</Link>
+          <Link className="nav-link" to="/register" style={{color:"#c1e6d5"}}><i class="fa-solid fa-arrow-up-right-from-square" style={{marginRight:"5px"}}></i> Register</Link>
         </li>
       </ul>
     </div>

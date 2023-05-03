@@ -1,0 +1,15 @@
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    .topic{
+        .title{
+            text-decoration: none;
+            letter-spacing: 0.5;
+            &:hover{
+                color: yellowgreen;
+        }
+        }
+    }
+}

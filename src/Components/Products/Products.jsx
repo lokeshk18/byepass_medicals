@@ -8,8 +8,12 @@ const Products = () => {
     <div className="prod">
         <Navbar/>
         <br />
-    <div className="container">
+        {/* <div className="heading">
+            
+        </div> */}
 
+    <div className="container">
+    <h4 className="heading"> Baby Products </h4>
         <div className="row  products">
             
             <div className="col-4 product">

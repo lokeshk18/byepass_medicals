@@ -2,20 +2,18 @@ import React from "react";
 import Search from "../../Components/Search/Search";
 import Navbar from '../../Components/Navbar/Navbar';
 import Carousel from "../../Components/Carousel/Carousel";
-// import Card from "../../Components/Card/Card";
 import Footer from '../../Components/Footer/Footer';
-import './Home.scss'
+import './Home.scss';
 import offer from '../../assets/offer.webp'
-// import Shop2 from "../../Components/Card/Shop2";
 import Scrolls from "../../Components/Scrolls/Scrolls";
 import Brands from "../../Components/Brands/Brands";
 import userimg from "../../assets/users.png"
-// import Product from "../../Components/Card/Product";
 
 const Home = ()=>{
   // const arr=[1,2, 3,4];
     return (
        <div className="home-container">
+        
         <Navbar/>
         <Search />
     
@@ -27,14 +25,14 @@ const Home = ()=>{
                 <img src={offer} style={{width:"95%"}} alt="" />
             </div>
 
-           <div className="row">
+        <div className="row">
             {/* {arr.map((a,i)=>(
               <div key={i} className="col-2">    
               </div>
             ))
             
             } */}
-   </div>
+        </div>
             <div className="deals-container  my-3 ">
                     <h5 className="p-3" style={{color:"black"}}>Deals of the Day</h5>
                     <Scrolls/>
@@ -52,9 +50,7 @@ const Home = ()=>{
                 
            </div>
            <div style={{padding:"30px"}} className="deals-container  my-3 ">
-                    <h5 className="p-3" style={{color:"black"}}>Why Choose US</h5>
-                   
-        
+              <h5 className="p-3" style={{color:"black"}}>Why Choose US</h5>
 
          <div className="choose-container">
 
@@ -98,7 +94,8 @@ const Home = ()=>{
             </div>
           </div>
 
-        </div>    </div>
+        </div>
+        </div>
 
                 {/* Footer */}
 

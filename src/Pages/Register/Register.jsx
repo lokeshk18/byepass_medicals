@@ -4,7 +4,7 @@ import Button from '../../Components/Button/Button';
 import FormHeader from '../../Components/FormHeader/FormHeader';
 import {Link} from "react-router-dom";
 import Navbar from '../../Components/Navbar/Navbar';
-import './Register.scss';
+// import './Register.scss';
 const Register = () => {
   const [name,setName]=useState("")
   const [Fname,setFname]=useState("")
@@ -80,10 +80,9 @@ const Register = () => {
             <button className='btn' style={{backgroundColor:"#00AA95"}}><Link to="/home" style={{color:"whitesmoke"}}>Register</Link></button>
             </form>
           </div>
-           
-//           </div>
-//         </div>
-//     </div>
-//   )
-// }
-// export default Register
+          </div>
+        </div>
+     </div>
+  )
+}
+export default Register

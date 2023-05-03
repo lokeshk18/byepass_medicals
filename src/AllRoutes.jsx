@@ -8,7 +8,7 @@ import Lander from './Pages/Lander/Lander'
 import Cart from './Pages/Cart/Cart'
 import Allproduct from './Pages/Product/Allproduct'
 import Products from './Components/Products/Products'
-
+import Order from './Components/Order/Order'
 const AllRoutes = () => {
   return (
     <Routes>
@@ -21,6 +21,7 @@ const AllRoutes = () => {
         <Route path='/cart' element={<Cart/>}/>
         {/* <Route path='/products' element={<Allproduct/>}/> */}
         <Route path='/products' element={<Products/>}/>
+        <Route path='/order' element={<Order/>}/>
         
        
     </Routes>

@@ -1,12 +1,14 @@
 import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo.png'
 function Navbar(){
     return(
        <div className="Navbar-container">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <Link className="navbar-brand nav-color" to="./Home" style={{color:"#17c272",fontFamily: "sanserif",fontSize:"25px",marginLeft:"20px"}}>BYEPASS MEDICALS</Link>
+    <img src={logo}  style={{width:"50px",height:"50px"}} alt="" />
+    <Link className="navbar-brand nav-color" to="./Home" style={{color:"white",fontFamily: "sanserif",fontSize:"25px",marginLeft:"20px"}}>BYEPASS MEDICALS</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import Login from './Pages/Login/Login'
-import Register from './Pages/Register/Register'
+// import Register from './Pages/Register/Register'
 import Categories from './Components/Category/Category'
 import Home from './Pages/Home/Home'
 import Lander from './Pages/Lander/Lander'
@@ -20,8 +20,6 @@ const AllRoutes = () => {
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/view' element={<ViewProduct/>}/>
-        
-       
     </Routes>
   )
 }

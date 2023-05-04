@@ -1,8 +1,7 @@
 import React from 'react'
-import './Login.css'
-
+import './Register.css'
 import Navbar from '../../Components/Navbar/Navbar';
-const Login = () => {
+const Register = () => {
   return (
   <div>
      <Navbar/>
@@ -16,7 +15,7 @@ const Login = () => {
       </div>
       <div className="body-form">
        <form>
-          <div className="input-group mb-3">
+ <div className="input-group mb-3">
 <div className="input-group-prepend">
 <span className="input-group-text" style={{borderRadius:"0%",height:"40px"}}><i class="fa fa-user"></i></span>
 </div>
@@ -50,4 +49,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Register

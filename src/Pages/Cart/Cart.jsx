@@ -20,7 +20,7 @@ function Cart() {
     
     <div className="row">
         <main className="col-md-9">
-    <div className="card">
+    <div className="cart">
     
     <table className="table table-borderless table-shopping-cart">
     <thead className="text-muted">
@@ -35,7 +35,7 @@ function Cart() {
     <tr>
         <td>
             <figure className="itemside">
-                <div className="aside"><img src="https://cdn01.pharmeasy.in/dam/products_otc/U97974/everherb-giloy-tulsi-juice-strengthens-body-defence-system-natural-immunity-booster-1-litre-2-1680172279.jpg?dim=700x0&dpr=1&q=100" /></div>
+                <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/U97974/everherb-giloy-tulsi-juice-strengthens-body-defence-system-natural-immunity-booster-1-litre-2-1680172279.jpg?dim=700x0&dpr=1&q=100" /></div>
                 <figcaption className="info">
                     <a href="#" className="title text-dark"><b>Everherb Giloy Tulsi Juice - Strengthens Body Defence System - Natural Immunity Booster - 1 Litre</b></a>
                     <p className="text-muted small">Expires on or After:30/01/2024 <br /> Brand: EVERHERB</p>
@@ -64,7 +64,7 @@ function Cart() {
     <tr>
         <td>
             <figure className="itemside">
-                <div className="aside"><img src="https://cdn01.pharmeasy.in/dam/products_otc/W16773/pharmeasy-digital-thermometer-2-1681796833.jpg?dim=1440x0" className="img-sm" /></div>
+                <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/W16773/pharmeasy-digital-thermometer-2-1681796833.jpg?dim=1440x0" className="img-sm" /></div>
                 <figcaption className="info">
                     <a href="#" className="title text-dark"><b>Digital Thermometer</b></a>
                     <p className="text-muted small">Country of Origin : India <br /> Brand: Store</p>
@@ -93,7 +93,7 @@ function Cart() {
     <tr>
         <td>
             <figure className="itemside">
-                <div className="aside"><img src="https://cdn01.pharmeasy.in/dam/products_otc/I34562/glutone-1000mg-tablet-15s-1-1669710439.jpg?dim=700x0&dpr=1&q=100" className="img-sm" /></div>
+                <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/I34562/glutone-1000mg-tablet-15s-1-1669710439.jpg?dim=700x0&dpr=1&q=100" className="img-sm" /></div>
                 <figcaption className="info">
                     <a href="#" className="title text-dark"><b>Glutone 1000mg Tablet 15'S</b></a>
                     <p className="small text-muted">Expires on or After :30/01/2024<br />  Brand: GLUTONE </p>

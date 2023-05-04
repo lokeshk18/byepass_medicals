@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import {Link } from "react-router-dom"
-import "./Allproduct.scss";
+import "./Category.scss";
 
 function Allproduct() {
   const topics = [

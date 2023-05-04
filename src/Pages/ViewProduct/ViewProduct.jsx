@@ -1,27 +1,27 @@
 import React from "react"
-import "./Order.scss"
-import Navbar from "../Navbar/Navbar";
-function Order() {
-    return (<section>
+import "./ViewProduct.scss"
+import Navbar from "../../Components/Navbar/Navbar";
+function ViewProduct() {
+    return (
+    
+    <section className="view">
          <Navbar/>
     <div className="App p-5">
     <>
-   
     <div className="container">
-  <div className="row">
-  <div className="col p-2">
+    <div className="row">
+    <div className="col p-2">
       <img src="https://cdn01.pharmeasy.in/dam/products_otc/E54755/everherb-by-pharmeasy-aloe-vera-juice-with-pulp-rejuvenates-skin-hair-1-litre-bottle-2-1680172150.jpg?dim=700x0&dpr=1&q=100"></img>
     </div>
   
     <div className="col p-2">
-    <h3>Everherb (By Pharmeasy)  Amla Juice-Rich In Vitamin C-Natural Immunity Booster - 1 Litre Bottle</h3>
+    <h3>Everherb Amla Juice-Rich In Vitamin C-Natural Immunity Booster - 1 Litre Bottle</h3>
     <h4>₹199.5</h4><h6>MRP<del>₹399</del></h6>
     <div className="offer">50% OFF</div>
     <h6>Delivery by <b>Tomorrow, 9:00 am - 3:00 pm</b></h6>
-    <button className="btn btn-outline-secondary" type="button">ADD TO CARD</button>
+    <button className="btn btn-outline-secondary" style={{marginRight:"20px"}} type="button">ADD TO CART</button>
+    <button className="btn btn-outline-secondary" style={{color:"whitesmoke",backgroundColor:"#8897a2",fontSize:"19px"}} type="button">Order</button>
     </div>
-    
-   
     </div>
 </div>
 <div  classNameName="pic">
@@ -37,10 +37,9 @@ function Order() {
         </div><div className="col-1 p-4">
         <a href="#"> <button> <img style={{width:"100px",height:"100px"}} src="https://cdn01.pharmeasy.in/dam/products_otc/D92359/everherb-by-pharmeasy-amla-juice-rich-in-vitamin-c-natural-immunity-booster-1-litre-bottle-6.4-1680172300.jpg"></img></button></a>
         </div>
-      </div>
-
-    </div>
-    </div>
+</div>
+  </div>
+</div>
     </>
     <h5><b>Description</b></h5>
     
@@ -66,4 +65,4 @@ Amla is also good for the skin; vitamin C can help with hyperpigmentation, tone 
      );
     }
     
-    export default Order;
+export default ViewProduct;

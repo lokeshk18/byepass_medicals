@@ -4,7 +4,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className="Footer" style={{backgroundColor:"#1f5156"}}>
+    <div className="footer" style={{backgroundColor:"#1f5156"}}>
     <div className='foot'>
     <div className="container">
   <div className="row">
@@ -36,7 +36,7 @@ function Footer() {
     <div className="col pt-5">
      <h6 className='head'> Stay Updated</h6><br/>
       <div className="input-group">
-  <input type="email" className="form-control" placeholder="Your Email"/>  
+  <input type="email" className="form-control" style={{width:"100%"}} placeholder="Your Email"/>  
   <div className="input-group-append">
     <button className="btn btn-secondary"  type="button">Send</button>
   </div>

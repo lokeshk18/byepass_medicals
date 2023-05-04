@@ -1,4 +1,3 @@
-// 
 import React from 'react'
 import './Login.css'
 const Login = () => {
@@ -14,15 +13,19 @@ const Login = () => {
        <form>
           <div className="input-group mb-3">
 <div className="input-group-prepend">
-<span className="input-group-text"><i class="fa fa-user"></i></span>
+<span className="input-group-text" style={{borderRadius:"0%",height:"40px"}}><i class="fa fa-user"></i></span>
 </div>
-<input type="text" className="form-control" placeholder="Username" />
+<div className='row'>
+<input type="text" className="form-control" style={{borderLeft:"none",borderRadius:"0%"}} placeholder="Username" />
+</div>
 </div>
 <div className="input-group mb-3">
 <div className="input-group-prepend">
-<span className="input-group-text"><i class="fa fa-lock"></i></span>
+<span className="input-group-text" style={{height:"40px",border:"none",borderRadius:"0%"}}><i class="fa fa-lock"></i></span>
 </div>
-<input type="text" className="form-control" placeholder="Password" />
+<div className='row'>
+<input type="text" style={{borderLeft:"none",borderRadius:"0%"}} className="form-control" placeholder="Password" />
+</div>
 </div>
 <button type="button" className="btn btn-secondary btn-block btn2">LOGIN</button>
 <div className="message">

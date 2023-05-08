@@ -31,10 +31,10 @@ const Register = () => {
 <input type="text" style={{borderLeft:"none",borderRadius:"0%"}} className="form-control" placeholder="Password" />
 </div>
 </div>
-<button type="button" className="btn btn-secondary btn-block btn2">LOGIN</button>
+<button type="button" className="btn btn-primary btn-block btn2">LOGIN</button>
 <div className="message">
 <div><input type="checkbox" /> Remember ME</div>
-<div><a href="#">Forgot your password</a></div>
+<div><a href="#" >Forgot your password</a></div>
 </div>
 </form>
         <div className="social">

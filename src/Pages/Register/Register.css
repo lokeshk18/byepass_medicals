@@ -53,22 +53,22 @@
   }
   .form-box{
         width:380px;
-        height:450px;
+        height:73vh;
         /* background-color:black; */
         border: solid 3px gray;
   
         padding:20px;
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-start;
+        /* display:flex; */
+        /* flex-direction:column; */
+        /* justify-content:flex-start; */
         opacity:0.5;
         border-radius:2%;
     }
   .header-form{
-    margin-bottom:15px;
+    margin-bottom:0px;
   }
   .btn2{
-    margin-top:40px;
+    margin-top:0px;
     margin-bottom:10px;
   }
   .message{

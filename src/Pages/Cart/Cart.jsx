@@ -1,17 +1,27 @@
 import React from 'react'
-
+import axios from 'axios';
 import Navbar from '../../Components/Navbar/Navbar';
+import { useState,useEffect } from 'react';
 
 function Cart() {
+    const [quantity,setQuantity] = useState("1");
+    const [pdt,setPdt] = useState();
+    useEffect(()=>{
+        const userId = localStorage.getItem("userId");
+        axios
+        .get(`http://localhost:4000/getcart/${userId}`)
+        .then(res=>{  
+            console.log(res.data[0].name)
+            setPdt(res.data)
+        }) 
+    },[]);
+    if(pdt!=null){
   return (
     <div>
       <Navbar/>
-
-      {/* <div className="App">   */}
-        
+    
     <section class="section-pagetop bg">
-    <div class="container">
-      
+    <div class="container">  
     </div> 
     </section>
     
@@ -32,28 +42,35 @@ function Cart() {
     </tr>
     </thead>
     <tbody>
+    { pdt.map((ele)=>
     <tr>
         <td>
             <figure className="itemside">
                 <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/U97974/everherb-giloy-tulsi-juice-strengthens-body-defence-system-natural-immunity-booster-1-litre-2-1680172279.jpg?dim=700x0&dpr=1&q=100" /></div>
                 <figcaption className="info">
-                    <a href="#" className="title text-dark"><b>Everherb Giloy Tulsi Juice - Strengthens Body Defence System - Natural Immunity Booster - 1 Litre</b></a>
-                    <p className="text-muted small">Expires on or After:30/01/2024 <br /> Brand: EVERHERB</p>
+                    <a href="#" className="title text-dark"><b>{ele.name}</b></a>
+                    {/* <p className="text-muted small">Expires on or After:30/01/2024 <br /> Brand: EVERHERB</p> */}
                 </figcaption>
             </figure>
         </td>
         <td> 
-            <select className="form-control">
-                <option>1</option>
-                <option>2</option>  
-                <option>3</option>  
-                <option>4</option>  
-            </select> 
+            <select name="quantity" onChange={(e)=>setQuantity(e.target.value)} style={{marginLeft:"8px"}}>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
         </td>
         <td> 
             <div className="price-wrap"> 
-                <var className="price"><h5>₹199.5</h5></var> 
-                <small className="text-muted"><h6>MRP<del>₹399</del></h6> </small> 
+                <var className="price"><h5>₹{ele.price}</h5></var> 
+                <small className="text-muted"><h6>MRP<del>{ele.mrp}</del></h6> </small> 
             </div> 
         </td>
         <td className="text-right"> 
@@ -61,63 +78,7 @@ function Cart() {
         <a href="#" className="btn btn-primary float-md-right"> Remove<i className="fa fa-chevron-right"></i> </a>
         </td>
     </tr>
-    <tr>
-        <td>
-            <figure className="itemside">
-                <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/W16773/pharmeasy-digital-thermometer-2-1681796833.jpg?dim=1440x0" className="img-sm" /></div>
-                <figcaption className="info">
-                    <a href="#" className="title text-dark"><b>Digital Thermometer</b></a>
-                    <p className="text-muted small">Country of Origin : India <br /> Brand: Store</p>
-                </figcaption>
-            </figure>
-        </td>
-        <td> 
-            <select className="form-control">
-                <option>1</option>
-                <option>2</option>  
-                <option>3</option>  
-                <option>4</option>  
-            </select> 
-        </td>
-        <td> 
-            <div className="price-wrap"> 
-                <var className="price"><h5>₹151.5</h5></var> 
-                <small  className="text-muted"><h6>MRP<del>₹200</del></h6> </small>  
-            </div> 
-        </td>
-        <td className="text-right"> 
-        <a data-original-title="Save to Wishlist" title="" href="" className="btn btn-light mr-2" data-toggle="tooltip"> <i className="fa fa-heart"></i></a> 
-        <a href="#" className="btn btn-primary float-md-right"> Remove <i className="fa fa-chevron-right"></i> </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <figure className="itemside">
-                <div className="aside"><img style={{width:"50%"}} src="https://cdn01.pharmeasy.in/dam/products_otc/I34562/glutone-1000mg-tablet-15s-1-1669710439.jpg?dim=700x0&dpr=1&q=100" className="img-sm" /></div>
-                <figcaption className="info">
-                    <a href="#" className="title text-dark"><b>Glutone 1000mg Tablet 15'S</b></a>
-                    <p className="small text-muted">Expires on or After :30/01/2024<br />  Brand: GLUTONE </p>
-                </figcaption>
-            </figure>
-        </td>
-        <td> 
-            <select className="form-control">
-                <option>1</option>
-                <option>2</option>  
-                <option>3</option>  
-            </select> 
-        </td>
-        <td> 
-            <div className="price-wrap"> 
-                <var className="price"><h5>₹1897.27</h5></var> 
-                <small className="text-muted"> <h6>MRP<del>₹2599</del></h6></small> 
-            </div> 
-        </td>
-        <td className="text-right"> 
-            <a data-original-title="Save to Wishlist" title="" href="" className="btn btn-light mr-2" data-toggle="tooltip"> <i className="fa fa-heart"></i></a> 
-            <a href="#" className="btn btn-primary float-md-right"> Remove <i className="fa fa-chevron-right"></i> </a>
-        </td>
-    </tr>
+    )}
     </tbody>
     </table>
     
@@ -159,8 +120,7 @@ function Cart() {
     </div> 
     </section>
 </div>
-    
-  )
+)}
 }
 
 export default Cart;

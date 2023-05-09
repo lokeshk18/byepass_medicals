@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
   
   async function post(e) {
-    console.log("api")
+
       e.preventDefault()
       const inputs = {
           email,
@@ -22,7 +22,7 @@ const Login = () => {
               .post("http://localhost:4000/login",inputs)
               .then(res => {
                   localStorage.setItem("email", res.data.email)
-                  // localStorage.setItem("password", res.data.password)
+                  localStorage.setItem("userId", res.data._id)
                   console.log(res)
                   alert("Login successful..!!");
                   navigate("/home")

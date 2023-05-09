@@ -55,12 +55,28 @@ const Search = () => {
 
         <div className="row" style={{margin:"20px"}}>
                 <div className="topics-container">
-                    {topics.map((t,i)=>(
-                        <div className="topic" key={i}>
-                          <Link to="/products" className='title' style={{color:"#2b2b2b"}}>{t.title}</Link>   
+                        <div className="topic"   >
+                          <Link to="/products/baby" className='title' style={{color:"#2b2b2b"}}>Baby Products</Link>   
                         </div>
-                    ))}
-                </div>            
+                        <div className="topic"   >
+                          <Link to="/products/medicines" className='title' style={{color:"#2b2b2b"}}>Medicines</Link>   
+                        </div>
+                        <div className="topic"   >
+                          <Link to="/products/alopathy" className='title' style={{color:"#2b2b2b"}}>Alopathy and Ayush</Link>   
+                        </div>
+                        <div className="topic"   >
+                          <Link to="/products/veterinary" className='title' style={{color:"#2b2b2b"}}>Veterinary medicine</Link>   
+                        </div>
+                        <div className="topic"   >
+                          <Link to="/products/surgical" className='title' style={{color:"#2b2b2b"}}>Surgical products</Link>   
+                        </div>
+                        <div className="topic"   >
+                          <Link to="/products/consumer" className='title' style={{color:"#2b2b2b"}}>Consumer Products</Link>
+                        </div>
+                        <div className="topic"   >
+                          <Link to="/products/injection" className='title' style={{color:"#2b2b2b"}}>Injections</Link>   
+                        </div>
+                </div>
               </div>
 
     </div>

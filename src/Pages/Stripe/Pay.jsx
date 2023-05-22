@@ -87,7 +87,7 @@ const Pay = () => {
     useEffect(()=>{
         const makeRequest = async()=>{
             try{
-                const res = await axios.post("http://localhost:4000/payment",{
+                const res = await axios.post("https://byepass-server.onrender.com/payment",{
                     tokenId:stripeToken.id,
                     amount:amount
                 });
@@ -99,7 +99,7 @@ const Pay = () => {
                     }
                     
                     console.log(pdt)
-                    await axios.post(`http://localhost:4000/addorder`,{
+                    await axios.post(`https://byepass-server.onrender.com/addorder`,{
                             userId,
                             amount:amount,
                             address,

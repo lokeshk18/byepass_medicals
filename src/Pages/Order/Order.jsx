@@ -19,7 +19,7 @@ function Order() {
     useEffect(()=>{
         const userId = localStorage.getItem("userId");
          axios
-        .get(`http://localhost:4000/orders/${userId}`)
+        .get(`https://byepass-server.onrender.com/orders/${userId}`)
         .then(res=>{  
             // setPdt(res.data)
             // setQuantity(res.data[0].quantity)

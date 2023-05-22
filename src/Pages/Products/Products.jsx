@@ -11,7 +11,7 @@ const Products = () => {
     const [pdt , setPdt] = useState([])
     useEffect(()=>{
             axios
-            .get(`http://localhost:4000/products/${params.id}`)
+            .get(`https://byepass-server.onrender.com/products/${params.id}`)
             .then(res=>{  
                 console.log(res.data)
                 setPdt(res.data) 

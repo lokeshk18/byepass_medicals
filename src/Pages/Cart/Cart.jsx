@@ -15,7 +15,7 @@ function Cart() {
     useEffect(()=>{
         const userId = localStorage.getItem("userId");
          axios
-        .get(`http://localhost:4000/getcart/${userId}`)
+        .get(`https://byepass-server.onrender.com/getcart/${userId}`)
         .then(res=>{  
             console.log(res.data)
             setPdt(res.data.pdt)

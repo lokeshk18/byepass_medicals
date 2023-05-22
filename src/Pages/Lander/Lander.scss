@@ -10,7 +10,6 @@
     }
 }
 .but1{
-    margin-right: 80px;
     text-decoration: none;
     border-radius:40px;
     background-color:#3c7378;
@@ -18,9 +17,14 @@
 }
 .but1:hover
 {
-    // padding-right: 0px;
+    color:#729da1;
 }
 button:hover 
 {
 background-color: rgb(73, 57, 214);
+}
+
+.p1{
+    line-height: 35px;
+    text-align: center;
 }

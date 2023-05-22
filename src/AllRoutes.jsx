@@ -9,6 +9,8 @@ import Cart from './Pages/Cart/Cart'
 import Products from './Pages/Products/Products'
 import ViewProduct from './Pages/ViewProduct/ViewProduct'
 import About from './Pages/About/About'
+import Pay from './Pages/Stripe/Pay'
+import Order from './Pages/Order/Order'
 const AllRoutes = () => {
   return (
     <Routes>
@@ -19,9 +21,12 @@ const AllRoutes = () => {
         <Route path='/home' element={<Home/>} />
         <Route path='/categories' element={<Categories/>} />
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/order' element={<Order/>}/>
         <Route path='/products/:id' element={<Products/>}/>
         <Route path='/view' element={<ViewProduct/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/pay' element={<Pay/>}/>
+        
     </Routes>
   )
 }

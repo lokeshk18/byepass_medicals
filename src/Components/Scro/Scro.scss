@@ -1,0 +1,42 @@
+.scroll-container{
+    width: 100%;
+    background-color: #fff;
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:12px;
+        flex-wrap: wrap;
+      
+        .product-card{
+  
+          width: fit-content;
+          border: none;
+          padding: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap:12px;
+          background-color: white;
+          border: 1px solid white;
+              .img-container{
+                width: 75px;
+                height: 75px;
+                border-radius:0 0 24px 24px;
+                overflow: hidden;
+                  img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                  }
+              }
+           &:hover{
+            border: 1px solid lightgray;
+            border-radius: 12px;
+           }
+        }
+  
+  
+      }
+  }

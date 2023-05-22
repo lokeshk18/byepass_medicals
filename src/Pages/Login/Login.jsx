@@ -24,8 +24,8 @@ const Login = () => {
                   localStorage.setItem("email", res.data.email)
                   localStorage.setItem("userId", res.data._id)
                   console.log(res)
-                  alert("Login successful..!!");
-                  navigate("/home")
+                  alert("Login successful..!!");  
+                  window.location.replace("/home")
               }
               )
       }
@@ -59,10 +59,10 @@ const Login = () => {
 <span className="input-group-text" style={{height:"40px",border:"none",borderRadius:"0%"}}><i class="fa fa-lock"></i></span>
 </div>
 <div className='row'>
-<input type="text" style={{borderLeft:"none",borderRadius:"0%"}} value={password} onChange={e => setPassword(e.target.value)}  className="form-control" placeholder="Password" />
+<input type="password" style={{borderLeft:"none",borderRadius:"0%"}} value={password} onChange={e => setPassword(e.target.value)}  className="form-control" placeholder="Password" />
 </div>
 </div>
-<button type="submit" className="btn btn-primary btn-block btn2" style={{fontWeight:"bold"}} >LOGIN</button>
+<button type="submit" onClick={post} className="btn btn-primary btn-block btn2" style={{fontWeight:"bold"}} >LOGIN</button>
 <div className="message">
 <div><input type="checkbox" /> Remember ME</div>
 <div><a href="#">Forgot your password</a></div>

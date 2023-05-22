@@ -61,7 +61,7 @@ const Register = () => {
 <span className="input-group-text" style={{height:"40px",border:"none",borderRadius:"0%"}}><i class="fa fa-lock"></i></span>
 </div>
 <div className='row'>
-<input type="text" style={{borderLeft:"none",borderRadius:"0%"}}  value={password} onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Password" />
+<input type="password" style={{borderLeft:"none",borderRadius:"0%"}}  value={password} onChange={e => setPassword(e.target.value)} className="form-control" placeholder="Password" />
 </div>
 </div>
 <div className="input-group mb-3">

@@ -3,6 +3,13 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
 function Navbar(){
+
+    const email =localStorage.getItem("email")
+
+    const logout = async ()=>{
+        localStorage.clear();
+    }
+
     return(
        <div className="Navbar-container">
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -23,6 +30,17 @@ function Navbar(){
          <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/about" style={{color:"#c1e6d5"}}><i class="fa-sharp fa-solid fa-address-card" style={{marginRight:"5px"}}></i> About</Link>
         </li>
+
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/cart"  style={{color:"#c1e6d5"}}><i class="fa-solid fa-cart-plus" style={{marginRight:"5px"}}></i>  Cart</Link>
+        </li>
+
+        <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/order"  style={{color:"#c1e6d5"}}><i class="fa-solid fa-suitcase-medical" style={{marginRight:"5px"}}></i>  Orders</Link>
+        </li>
+
+        {email==null?(
+        <div className="div1">
         <li className="nav-item">
           <Link className="nav-link" to="/login" style={{color:"#c1e6d5"}}><i class="fa-solid fa-arrow-right-to-bracket" style={{marginRight:"5px"}}></i> Login</Link>
         </li>
@@ -30,6 +48,13 @@ function Navbar(){
         <li className="nav-item">
           <Link className="nav-link" to="/register" style={{color:"#c1e6d5"}}><i class="fa-solid fa-arrow-up-right-from-square" style={{marginRight:"5px"}}></i> Register</Link>
         </li>
+        </div>
+        ):(
+        <li className="nav-item">
+          <Link className="nav-link" to="/login" onClick={logout} style={{color:"#c1e6d5"}}><i class="fa-solid fa-arrow-right-to-bracket" style={{marginRight:"5px"}}></i> Logout</Link>
+        </li>
+        )
+        }
       </ul>
     </div>
   </div>

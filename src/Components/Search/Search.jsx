@@ -54,7 +54,7 @@ const Search = () => {
         </div>
 
         <div className="row" style={{margin:"20px"}}>
-                <div className="topics-container">
+                <div className="topics-container my-2">
                         <div className="topic"   >
                           <Link to="/products/baby" className='title' style={{color:"#2b2b2b"}}>Baby Products</Link>   
                         </div>

@@ -8,6 +8,7 @@ import offer from '../../assets/offer.webp'
 import Scrolls from "../../Components/Scrolls/Scrolls";
 import Brands from "../../Components/Brands/Brands";
 import userimg from "../../assets/users.png"
+import Scro from "../../Components/Scro/Scro";
 
 const Home = ()=>{
   // const arr=[1,2, 3,4];
@@ -40,7 +41,7 @@ const Home = ()=>{
 
             <div className="shops-container my-3 ">
                   <h5 className="p-3" style={{color:"black"}}>Shop By health concerns</h5>
-                  <Scrolls/>
+                  <Scro/>
             </div>
             <div className="shops-container my-3 ">
                   <h5 className="p-3" style={{color:"black"}}>Top Brands</h5>

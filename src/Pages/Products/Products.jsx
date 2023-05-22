@@ -29,7 +29,7 @@ const Products = () => {
             {pdt.map((ele)=>
             <div className="col-4 product">
                 <div className="image">
-                    <img src="https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/6cb501a7eb8149bbb4e51446359d855a.jpg" alt=""/>
+                    <img src={ele.imageurl} style={{height:"20vh",width:"20vh"}} alt=""/>
                 </div>
                 <div>
                     <p> {ele.name}</p>

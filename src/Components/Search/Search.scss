@@ -35,9 +35,9 @@
        .title{
         text-decoration: none;
         letter-spacing: 0.5;
-        &:hover{
-            color: yellowgreen;
-        }
+        // &:hover{
+        //     color: rgb(150, 201, 48);
+        // }
        }
     }
 }
@@ -61,4 +61,8 @@
   
   input[type="search"]::placeholder {
     color: #bbb;
+  }
+
+.title :hover{
+    color: #5ed751;
   }

@@ -19,7 +19,7 @@ const Login = () => {
 
       try {
           await axios
-              .post("http://localhost:4000/login",inputs)
+              .post("https://byepass-server.onrender.com/login",inputs)
               .then(res => {
                   localStorage.setItem("email", res.data.email)
                   localStorage.setItem("userId", res.data._id)

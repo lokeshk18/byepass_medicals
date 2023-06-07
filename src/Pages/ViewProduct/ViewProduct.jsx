@@ -24,7 +24,7 @@ function ViewProduct() {
           quantity
       };
       console.log(inputs)
-      await axios.post("http://localhost:4000/addcart", inputs)
+      await axios.post("https://byepass-server.onrender.com/addcart", inputs)
           .then(
                   console.log("l")
           ).catch(

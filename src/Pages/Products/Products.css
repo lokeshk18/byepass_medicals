@@ -6,34 +6,19 @@
     --starColor: #f67034;
     --sectionBack: #f7f6f9;
 }
-/* 
-.container{
-    
-    /* padding: 20px; */
-    /* width: 80vw; */
-    /* height:90vh; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-content: center; */
-/* } */ */
 .header{
     width: 100%;
     text-align: center;
 }
 .header h6{
-    /* font-size: 4em; */
+
     text-transform: uppercase;
     color: grey;
 }
 .products{
-    /* width: 100%; */
-    /* align-self: center; */
-    /* height: 70%; */
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    /* flex-wrap: wrap; */
     gap: 90px;
 }
 .product{
@@ -65,7 +50,6 @@
 .namePrice{
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
 }
 .namePrice h3{
     font-size: 2em;

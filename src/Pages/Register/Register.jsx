@@ -19,7 +19,7 @@ const Register = () => {
             password
         };
         try {
-            const res = await axios.post("http://localhost:4000/register", inputs);
+            const res = await axios.post("https://byepass-server.onrender.com/register", inputs);
             res.data && window.location.replace("/login");
         }
         catch (err) {
